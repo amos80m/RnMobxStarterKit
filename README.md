@@ -1,6 +1,6 @@
 # Mobx + React-native Strater kit
 
-Very fast and easy to use simpole starte kit for react native app + Mobx
+Very fast and easy to use simple starte kit for react native app + Mobx
 
   - git clone
   - cd + yarn
