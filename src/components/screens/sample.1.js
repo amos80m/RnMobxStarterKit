@@ -21,6 +21,6 @@ const styles = {
     storeDataStyle:{
         color:'#900',
         fontSize:20,
-        paddigTop:20
+        paddingTop:20
     }
 }
