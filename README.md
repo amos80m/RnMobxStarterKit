@@ -1,7 +1,18 @@
-# Mobx + React-native Strater kit
+# React-Native + Mobix + Starter kit
 
-Very fast and easy to use simple starte kit for react native app + Mobx
+A React-Native starter kit using Mobx & React native navigation
 
-  - git clone
-  - cd + yarn
-  - start playing with the app
+### Installation
+
+
+```sh
+$ git clone
+$ cd project
+$ yarn
+$ react-native link(for font & icons)
+$ react-native run-ios/run-android
+```
+react-native verssion "0.55.4"
+
+### Intro
+![](./s.gif)

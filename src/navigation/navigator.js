@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { createStackNavigator, NavigationActions, createDrawerNavigator } from 'react-navigation';
 import { Text, View, TouchableOpacity, Animated, Easing } from 'react-native';
 import {MYRoutes} from './routes';
-import MenuPage from '../components/screens/menu';
+import MenuPage from '../components/common/menu';
 /************************************************************/
 
 

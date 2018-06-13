@@ -1,10 +1,10 @@
 import { observable, action } from 'mobx';
 
-class Store {
-  @observable item = 'This is an item.';
+class sampleStore {
+  @observable inputData = 'Click n Type to Update Observable in Store';
 
-  @action setItem(data) {
-    this.item = data;
+  @action updateStoreObservable(data) {
+    this.inputData = data;
   }
 }
-export default Store;
+export default sampleStore;

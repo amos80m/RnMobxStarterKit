@@ -14,22 +14,15 @@ export const MYRoutes = {
     SamplePage: {
         screen: SamplePage,
         navigationOptions: ({navigation}) => ({
-            header: <MainHeader title={'my header 1'}/>,
+            header: <MainHeader title={'First page title'}/>,
             gesturesEnabled: false
         })
     },
     SamplePage2: {
         screen: SamplePage2,
         navigationOptions: ({navigation}) => ({
-            header: <MainHeader title={'my header 2'}/>,
+            header: <MainHeader title={'Second page title'}/>,
             gesturesEnabled: false
         })
-    },
-    // MainScreen: {
-    //     screen: MainScreen,
-    //     navigationOptions: ({navigation}) => ({
-    //         header: <MainHeader/>,
-    //         gesturesEnabled: false
-    //     })
-    // },
+    }
 };

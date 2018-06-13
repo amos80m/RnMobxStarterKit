@@ -1,12 +1,15 @@
 import React, {Component} from 'react';
-import {Text, View, Button} from 'react-native';
+import {Text, View, TouchableOpacity} from 'react-native';
+import Icon from 'react-native-vector-icons/dist/FontAwesome';
 import {MenueActions} from '../../utilities'
 
     export const MainHeader = (props) => {
         return (
             <View style={styles.wrap}>
-              <Button onPress={() => MenueActions('o')} title={'menu'} />
-              <Text>{props.title}</Text> 
+             <TouchableOpacity style={styles.icon} onPress={() => MenueActions('o')}>
+                <Icon name="bars" size={30} color="#900" />
+             </TouchableOpacity>
+             <Text style={styles.mainTitle}>{props.title}</Text> 
             </View>
         );
     }
@@ -15,28 +18,23 @@ import {MenueActions} from '../../utilities'
 const styles = {
     wrap: {
         backgroundColor: '#fff',
-        padding: 10,
+        paddingTop: 20,
+        paddingBottom:10,
         flexDirection:'row',
         justifyContent:'space-between',
         alignItems:'center'
     },
     icon: {
         margin: 0, padding: 0,
-        marginLeft: 15    
+        marginLeft: 15,
+        flex:0.3   
     },
     mainTitle: {
+        flex:0.7,
         backgroundColor: 'transparent',
-        color: "#fff", alignSelf: 'center',
+        color: "#999", alignSelf: 'center',
         fontWeight: '500',
-        fontSize: 30,
-        padding: 0,
-        margin: 0
-    },
-    subTitle: {
-        backgroundColor: 'transparent',
-        color: "#fff", alignSelf: 'center',
-        fontWeight: '300',
-        fontSize: 26,
+        fontSize: 20,
         padding: 0,
         margin: 0
     }

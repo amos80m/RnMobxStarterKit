@@ -1,14 +1,12 @@
 import {observable, action} from 'mobx';
 
-import Store from './store';
+import sampleStore from './store';
 
 
 class RootStore {
     constructor() {
-        this.StoreMyTstStor = new Store({root: this})
+        this.sampleStore = new sampleStore({root: this})
     }
-
-    @observable Amos = "I am from Main root store";
 }
 
 export default RootStore;
